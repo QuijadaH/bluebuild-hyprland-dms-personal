@@ -23,14 +23,16 @@ modules:
         - atim/starship
     install:
       packages:
+        - btrfs-progs
+        - snapper
+        - networkmanager
+        - ufw
+        - openssh
         - micro
         - starship
     remove:
       packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - vim
 
   - type: default-flatpaks
     configurations:
