@@ -24,6 +24,14 @@ modules:
         - power-profiles-daemon    # Add user to group `i2c`
         - wl-clipboard
 
-  - type: script
-    snippets:
-      - "dms greeter enable"    # https://danklinux.com/docs/dankgreeter/installation#if-you-installed-the-package-manually
+  ### https://danklinux.com/docs/dankgreeter/installation#if-you-installed-the-package-manually ###
+  - type: files
+    files:
+      - source: system   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+        destination: /
+        
+  - type: systemd
+    system:
+      enabled:
+        - greetd
+  ##################################################################################################
