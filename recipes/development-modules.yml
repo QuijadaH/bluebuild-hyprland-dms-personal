@@ -6,3 +6,11 @@ modules:
     install:
       packages:
         - code
+        
+  - type: dnf
+    install:
+      packages:
+        - podman-compose
+        - podman-tui
+        - podlet
+        - containers-common-extra
