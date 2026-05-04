@@ -1,21 +1,14 @@
 modules:
   - type: dnf
-    repos:
-      copr:
-        enable:
-        - solopasha/hyprland
     install:
-      install-weak-deps: false
       packages:
       - hyprland
-      - hyprland-qtutils
       - qt5-qtwayland
       - qt6-qtwayland
       - xdg-desktop-portal-hyprland
 
   - type: dnf
     install:
-      install-weak-deps: false
       packages:
       - kanshi
       - kitty
