@@ -1,1 +1,23 @@
-
+modules:
+  - type: dnf
+    install:
+      packages:
+        - btrfs-assistant
+        - catfish
+        - file-roller
+        - firewall-config
+        - gparted
+        - gvfs
+        - gvfs-afc
+        - gvfs-archive
+        - gvfs-gphoto2
+        - libgsf 
+        - nemo
+        - nemo-extensions
+        - nemo-fileroller
+        - nemo-preview 
+        - nemo-python
+        - nemo-seahorse 
+        - poppler-glib 
+        - udiskie
+        - webp-pixbuf-loader
