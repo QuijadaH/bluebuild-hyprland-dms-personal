@@ -41,9 +41,6 @@ modules:
           - com.vysp3r.ProtonPlus
           - com.github.Matoking.protontricks
           - com.valvesoftware.Steam
-          - io.podman_desktop.PodmanDesktop
-          - me.iepure.devtoolbox
-          - io.github.DenysMb.Kontainer
       - scope: user
         repo:
           title: Flathub (user)
