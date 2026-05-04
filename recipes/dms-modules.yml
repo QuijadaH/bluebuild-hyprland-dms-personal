@@ -12,3 +12,6 @@ modules:
         - cliphist
         - wl-clipboard
         - ghostty
+        - power-profiles-daemon    # Add user to group `i2c`
+        - i2c-tools
+        - ddcutil
