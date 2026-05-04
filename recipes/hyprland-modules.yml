@@ -1,1 +1,13 @@
-
+modules:
+    - type: dnf
+      repos:
+        copr:
+          enable:
+            - solopasha/hyprland
+      install:
+        install-weak-deps: false
+        packages:
+        - kitty
+        - hyprland
+        - xdg-desktop-portal-hyprland
+        - hyprland-qtutils
