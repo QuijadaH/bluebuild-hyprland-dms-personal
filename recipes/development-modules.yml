@@ -22,6 +22,6 @@ modules:
         repo:
           title: Flathub (system)
         install:
-          - io.podman_desktop.PodmanDesktop
+          - io.podman_desktop.PodmanDesktop    # `systemctl --user enable --now podman.socket` && `ls -la /run/user/$(id -u)/podman/podman.sock`
           - me.iepure.devtoolbox
           - io.github.DenysMb.Kontainer
