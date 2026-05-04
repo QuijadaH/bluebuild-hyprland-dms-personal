@@ -16,13 +16,9 @@ modules:
           - scottames/ghostty
     install:
       packages:
-        - ghostty
-        
-  - type: dnf
-    install:
-      packages:
         - cliphist
-        - wl-clipboard
-        - power-profiles-daemon    # Add user to group `i2c`
-        - i2c-tools
         - ddcutil
+        - ghostty
+        - i2c-tools
+        - power-profiles-daemon    # Add user to group `i2c`
+        - wl-clipboard
