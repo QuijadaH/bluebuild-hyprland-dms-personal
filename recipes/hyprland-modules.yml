@@ -17,3 +17,4 @@ modules:
       - kanshi
       - kitty
       - wev
+      # - xwaylandvideobridge    # https://wiki.hypr.land/Useful-Utilities/Screen-Sharing/#xwayland
