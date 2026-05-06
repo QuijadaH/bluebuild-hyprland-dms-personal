@@ -3,11 +3,12 @@ modules:
     repos:
       copr:
         enable:
-          - avengemedia/dms
+            - avengemedia/dms
     install:
       packages:
         - dms
         - dms-greeter    
+        - adw-gtk3-theme
         
   - type: dnf
     repos:
