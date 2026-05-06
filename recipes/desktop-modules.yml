@@ -18,6 +18,7 @@ modules:
         - nemo-preview 
         - nemo-python
         - nemo-seahorse 
+        - nemo-terminal
         - poppler-glib 
         - udiskie
         - webp-pixbuf-loader
