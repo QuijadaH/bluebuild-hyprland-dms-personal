@@ -22,11 +22,11 @@ modules:
         repo:
           title: Flathub (system)
         install:
-          - io.podman_desktop.PodmanDesktop    # `systemctl --user enable --now podman.socket && ls -la /run/user/$(id -u)/podman/podman.sock`
+          - io.podman_desktop.PodmanDesktop
           - me.iepure.devtoolbox
           - io.github.DenysMb.Kontainer
   
   - type: systemd
     user:
       enabled:
-        - podman.socket    # `ls -la /run/user/$(id -u)/podman/podman.sock`
+        - podman.socket    # Verify with `ls -la /run/user/$(id -u)/podman/podman.sock`
