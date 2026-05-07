@@ -3,9 +3,12 @@ vt = 1
 
 [default_session]
 user = "greeter"
+command = "dms-greeter --command hyprland"
+
+### Uncomment the below line to run the greeter on Niri
 # command = "dms-greeter --command niri"
-### Uncomment the below line to run the greeter on Hyprland
-command = "dms-greeter --command Hyprland"
+### Uncomment to run the greeter on Hyprland
+# command = "dms-greeter --command Hyprland"
 ### Uncomment to run the greeter on sway
 # command = "dms-greeter --command sway"
 ### Uncomment to run the greeter on Miracle WM
