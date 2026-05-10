@@ -1,0 +1,18 @@
+modules:
+  - type: dnf
+    repos:
+      copr:
+        - atim/starship
+        - lihaohong/yazi
+    install:
+      packages:
+        - android-tools
+        - bat
+        - btrfs-assistant
+        - duf
+        - gdu
+        - imv
+        - micro
+        - realtime-setup   # `sudo usermod -a -G realtime $(whoami)`
+        - starship
+        - yazi
