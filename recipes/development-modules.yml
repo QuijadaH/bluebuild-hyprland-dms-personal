@@ -6,25 +6,10 @@ modules:
     install:
       packages:
         - code
-        
-  - type: dnf
-    install:
-      packages:
         - podman-compose
         - podman-tui
         - podlet
         - containers-common-extra
-
-  - type: default-flatpaks
-    configurations:
-      - notify: true 
-        scope: system
-        repo:
-          title: Flathub (system)
-        install:
-          - io.podman_desktop.PodmanDesktop
-          - me.iepure.devtoolbox
-          - io.github.DenysMb.Kontainer
   
   - type: systemd
     user:
