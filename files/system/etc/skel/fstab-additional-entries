@@ -1,4 +1,0 @@
-LABEL=WD-1TB  /var/mnt/WD-1TB@FILES  btrfs  subvol=/@files,noatime,compress=zstd:3,autodefrag,space_cache=v2  0  0
-LABEL=WD-1TB  /var/mnt/WD-1TB@STEAM  btrfs  subvol=/@steam,noatime,autodefrag,space_cache=v2  0 0
-LABEL=WD-1TB  /var/mnt/WD-1TB@SEEDS  btrfs  subvol=/@seeds,noatime,compress=zstd:3,autodefrag,space_cache=v2  0 0
-LABEL={current_label}  /var/mnt/SAMSUNG@STORAGE  btrfs  subvol=/storage,noatime,ssd,discard=async,space_cache=v2  0 0
