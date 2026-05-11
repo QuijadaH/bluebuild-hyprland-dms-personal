@@ -16,3 +16,17 @@ modules:
         - realtime-setup   # `sudo usermod -a -G realtime $(whoami)`
         - starship
         - yazi
+
+  - type: default-flatpaks
+    configurations:
+      - notify: false
+        scope: system
+        repo:
+          title: Flathub (system)
+        install: 
+          - com.github.wwmm.easyeffects
+          - org.equicord.equibop
+          - org.fedoraproject.MediaWriter
+          - com.vysp3r.ProtonPlus
+          - com.github.Matoking.protontricks
+          - com.valvesoftware.Steam
