@@ -1,18 +1,14 @@
 [Unit]
 Description=Easy Effects Audio Processor (Flatpak)
-After=hyprland-session.target
-PartOf=hyprland-session.target
-Requires=hyprland-session.target
+After=hyprland-session.target pipewire.service wireplumber.service
+Wants=hyprland-session.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/flatpak run com.github.wwmm.easyeffects
-Restart=always
-RestartSec=5
-Environment=WAYLAND_DISPLAY=1
-Environment=XDG_CURRENT_DESKTOP=Hyprland
-StandardOutput=null
-StandardError=null
+ExecStart=/usr/bin/flatpak run com.github.wwmm.easyeffects --gapplication-service
+Restart=on-failure
+RestartSec=3
+
 NoNewPrivileges=true
 
 [Install]
