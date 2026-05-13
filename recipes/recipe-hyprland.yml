@@ -22,6 +22,7 @@ modules:
   - type: script
     snippets:
       - "chmod +x /etc/skel/.local/bin/desktop-setup.sh"
+      - "chmod +x /usr/libexec/dank-blue-build-personal/mounts-setup"
 
   - type: systemd
     system:

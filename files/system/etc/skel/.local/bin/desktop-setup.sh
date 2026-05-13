@@ -31,7 +31,7 @@ if [[ -f "$STAMP_PATH/desktop-setup-done" ]]; then
     exit 0
 fi
 
-echo "Running setup script for user ${USER} in terminal emulator ${TERMINAL}..."
+echo "Running setup script for user ${USER}..."
 
 if [[ -f "$STAMP_PATH/sync-dankgreeter-done" ]]; then
     echo "DankGreeter has already been synced."
@@ -100,8 +100,17 @@ if [[ -e "$HOME/.config/systemd/user/easy-effects.service" ]]; then
     fi
 fi
 
-if [[ -e "/var/lib/dank-blue-build-personal/mounts-desktop-setup-done" ]]; then
-    echo "Disabling '/usr/libexec/dank-blue-build-personal/mounts-setup'..."
+if [[ -e "/usr/lib/dank-blue-build/skel-init-done" ]]; then
+    echo "Disabling 'skel-init.service'..."
+    if ! sudo systemctl disable --now skel-init.service; then
+        echo "Failed to disable 'skel-init.service'." >&2
+    else
+        echo "Successfully disabled 'skel-init.service'."
+    fi
+fi
+
+if [[ -e "/var/lib/dank-blue-build-personal/mounts-setup-done" ]]; then
+    echo "Disabling 'mounts-setup.service'..."
     if ! sudo systemctl disable --now mounts-setup.service; then
         echo "Failed to disable 'mounts-setup.service'." >&2
     else
