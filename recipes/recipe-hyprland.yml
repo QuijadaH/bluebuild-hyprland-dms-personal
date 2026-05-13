@@ -21,9 +21,12 @@ modules:
 
   - type: script
     snippets:
-      - "chmod +x /etc/skel/setup-storage.sh"
+      - "chmod +x /etc/skel/.local/bin/desktop-setup.sh"
 
   - type: systemd
+    system:
+      enabled:
+        - mounts-setup.service
     user:
       enabled:
         - easy-effects.service
